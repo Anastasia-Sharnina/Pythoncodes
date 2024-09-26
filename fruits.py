@@ -1,9 +1,13 @@
-fruits_list = ["Apple", "Orange"] #list
+# using random module the random smoothies can be made ^^
+
+import random
+# let's add some more fruits!
+
+fruits_list = ["Apple", "Orange", "Banana", "Watermelon", "Grapes"] #list
 
 print(f'Fruits: {fruits_list}')
 
-new_fruit = input("Please add a fruit to smoothie:\n")
+smoothie_inside = random.sample(fruits_list, 3) # let's make smoothies with 3 random ingredients (using randeom.sample()) 
 
-fruits_list.append(new_fruit)
-
-print(f'Smoothie mix: {fruits_list}')
+print("Here's a random smoothie for our dear customer!")
+print(f'Smoothie mix: {smoothie_inside}')
